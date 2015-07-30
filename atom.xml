@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>PyData.Okinawa</title>
+<link rel="alternate" href="http://pydata.okinawa/" />
+<author>masakyst</author>
+<generator uri="https://github.com/Songmu/p5-Riji" version="v0.9.7">Perl Riji</generator>
+<id>tag:pydata.okinawa,2015-05-08:</id>
+<updated>2015-05-26T12:33:58+09:00</updated>
+<entry>
+<title type="text">PyData.Okinawa とは</title>
+<link href="http://pydata.okinawa/entry/20150430.html" />
+<author>
+<name>Masaaki Saito</name>
+</author>
+<content type="html">
+<![CDATA[
+
+<p>PyData.Okinawa は Python + Data に興味のある方が交流できる沖縄を拠点にしたコミュニティです。</p>
+
+<p>データから新しい価値を生み出したいという想いがあれば、どのようなバックグラウンドを持った方でも自由に参加できるオープンなコミュニティです。
+沖縄で定期的に開催される勉強会ではPythonをメインな言語として使いますが、機械学習やデータアナリティクスに興味を持つ方であればどのような言語を使うプログラマの方でも参加可能です。</p>
+
+<p>またハードルは高いかもしれませんが、これからPythonプログラミングを覚えたい初心者の方も大歓迎です。</p>
+
+<p>沖縄県外のコミュニティとも積極的に交流しながら、次の世代をインスパイアするような新しい価値を生み出していくことがPyData.Okinawaの成功の姿です。</p>
+]]></content>
+<id>tag:pydata.okinawa,2015-05-09:entry-20150430.html</id>
+<published>2015-04-30T00:00:00+09:00</published>
+<updated>2015-05-26T12:33:58+09:00</updated>
+</entry>
+</feed>
