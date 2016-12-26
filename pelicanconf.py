@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = "PyData.Okinawa's organizer"
 SITENAME = 'PyData.Okinawa'
-SITEURL = ''
+SITEURL = '.'
 
 PATH = 'content'
 
