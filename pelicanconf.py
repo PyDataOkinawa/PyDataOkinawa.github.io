@@ -7,6 +7,8 @@ SITENAME = 'PyData.Okinawa'
 SITEURL = '.'
 
 PATH = 'content'
+ARTICLE_PATHS = ['articles',]
+PAGE_PATHS = ['pages',]
 
 TIMEZONE = 'Asia/Tokyo'
 
