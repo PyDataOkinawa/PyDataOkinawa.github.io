@@ -41,7 +41,7 @@ DEFAULT_PAGINATION = 10
 # NEST Template settings
 # ------------------------------------------------------------------------------
 THEME = "themes/nest-pydataokinawa"
-SITESUBTITLE = u'My Awesome Blog'
+SITESUBTITLE = u'PyData.Okinawa'
 
 # Minified CSS
 NEST_CSS_MINIFY = True
@@ -66,8 +66,8 @@ NEST_COPYRIGHT = u'&copy; blogname 2015'
 NEST_FOOTER_HTML = ''
 
 # index.html
-NEST_INDEX_HEAD_TITLE = u'Homepage'
-NEST_INDEX_HEADER_TITLE = u'My Awesome Blog'
+NEST_INDEX_HEAD_TITLE = u'HOME'
+NEST_INDEX_HEADER_TITLE = u'PyData.Okinawa'
 NEST_INDEX_HEADER_SUBTITLE = u'Smashing The Stack For Fun And Profit'
 NEST_INDEX_CONTENT_TITLE = u'Last Posts'
 
