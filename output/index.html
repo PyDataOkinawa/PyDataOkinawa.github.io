@@ -33,19 +33,34 @@
     <div class="header-container gradient">
 
             <!-- Static navbar -->
-            <div class="container">
-                <div class="header-nav">
-                    <div class="header-logo">
-                        <a class="pull-left" href="./"><img class="mr20" src="./theme/images/pydata-okinawa-logo-l.jpg" alt="logo">PyData.Okinawa</a>
+            <nav class="navbar navbar-default">
+              <div class="container">
+                <div class="row">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                      <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="./">
+                        PyData.Okinawa
+                        <!-- <img src="./theme/images/pydata-okinawa-logo-l.jpg" alt="PyData.Okinawa"> -->
+                      </a>
                     </div>
-                    <div class="nav pull-right">
-                                <a href="./">Home</a>
-                                <a href="./about.html">About</a>
-                                <a href="./organizer.html">Organizer</a>
-                                <a href="./categories.html">Categories</a>
+                    <div class="collapse navbar-collapse">
+                      <ul class="nav navbar-nav navbar-right">
+                                <li><a href="./">Home</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./organizer.html">Organizer</a></li>
+                                <li><a href="./categories.html">Categories</a></li>
+                      </ul>
                     </div>
+                  </div>
                 </div>
-            </div>
+              </div>
+            </nav>
             <!-- /Static navbar -->
 
             <!-- Header -->
@@ -72,9 +87,9 @@
         <div class="container content archive">
             <h2><a href="./index.html">Last Posts </a></h2>
             <dl class="dl-horizontal">
-                <dt>Mon 26 December 2016</dt>
+                <dt>月 26 12月 2016</dt>
                 <dd><a href="./gfm-test.html">GFM test</a></dd>
-                <dt>Sun 25 December 2016</dt>
+                <dt>日 25 12月 2016</dt>
                 <dd><a href="./my-first-review.html">My First Review</a></dd>
             </dl>
         </div>
@@ -120,5 +135,7 @@
             </div>
         </div>
         <!-- /Footer -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </body>
 </html>
