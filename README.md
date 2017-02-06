@@ -13,18 +13,19 @@ git clone https://github.com/PyDataOkinawa/PyDataOkinawa.github.io.git
 cd themes/nest-pydtaokinawa
 git submodule init
 git submodule update
+pelican content -o output -s pelicanconf.py
 ```
 
 
-## 作成中のWebサイトの確認の仕方
+## ローカル環境でWebサイトを確認する方法
 
-上記のコマンドを実行したあと、outputディレクトリで`python -m pelican.server`して、[http://localhost:8000](http://localhost:8000)にアクセスしてください
+上記Installationを実行したあと、生成されたoutputディレクトリ内で`python -m pelican.server`して、ブラウザで[http://localhost:8000](http://localhost:8000)にアクセスしてください
 
 
 ## 記事の書き方
 
 1. contentディレクトリ内に記事を作成
-2. PyDataOkinawa.github.ioのルートディレクトリで以下のコマンドを実行
+2. ルートディレクトリで以下のコマンドを実行
 
     ```shell
     pelican content -o output -s pelicanconf.py
@@ -38,7 +39,7 @@ git submodule update
 
 ## themes
 
-thmes/nest-pydataokinawaディレクトリ内のデータは別のリポジトリで管理されています([nest-pydataokinawa](https://github.com/PyDataOkinawa/nest-pydataokinawa))
+thmes/nest-pydataokinawaディレクトリ内のデータは別リポジトリで管理されています([nest-pydataokinawa](https://github.com/PyDataOkinawa/nest-pydataokinawa))
 
 
 ## References
