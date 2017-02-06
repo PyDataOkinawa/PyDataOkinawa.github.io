@@ -55,8 +55,8 @@ NEST_CSS_MINIFY = True
 MENUITEMS = [('Home', '/'),('About','/about.html'),('Organizer','/organizer.html'),('Categories','/categories.html')]
 
 # Add header background image from content/images : 'background.jpg'
-NEST_HEADER_IMAGES = ''
-NEST_HEADER_LOGO = '/theme/images/pydata-okinawa-logo-l.jpg' 
+NEST_HEADER_IMAGES = 'pydata-okinawa-logo-l.jpg' 
+NEST_HEADER_LOGO = 'images/pydata-okinawa-logo-l.jpg' 
 
 # Footer
 NEST_SITEMAP_COLUMN_TITLE = u'Sitemap'
@@ -73,7 +73,7 @@ NEST_FOOTER_HTML = ''
 # index.html
 NEST_INDEX_HEAD_TITLE = u'HOME'
 NEST_INDEX_HEADER_TITLE = u'PyData.Okinawa'
-NEST_INDEX_HEADER_SUBTITLE = u'Smashing The Stack For Fun And Profit'
+NEST_INDEX_HEADER_SUBTITLE = u'Python + Data に興味のある人が交流する、沖縄を拠点にしたコミュニティです'
 NEST_INDEX_CONTENT_TITLE = u'Last Posts'
 
 # archives.html
