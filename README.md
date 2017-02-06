@@ -7,15 +7,12 @@
 
 ## Installation
 
-```shell
-pip install pelican Markdown mdx_linkify mdx_del_ins
-git clone https://github.com/PyDataOkinawa/PyDataOkinawa.github.io.git
-cd themes/nest-pydtaokinawa
-git submodule init
-git submodule update
-pelican content -o output -s pelicanconf.py
-```
-
+    pip install pelican Markdown mdx_linkify mdx_del_ins
+    git clone https://github.com/PyDataOkinawa/PyDataOkinawa.github.io.git
+    cd themes/nest-pydtaokinawa
+    git submodule init
+    git submodule update
+    pelican content -o output -s pelicanconf.py
 
 ## ローカル環境でWebサイトを確認する方法
 
@@ -24,12 +21,21 @@ pelican content -o output -s pelicanconf.py
 
 ## 記事の書き方
 
-1. contentディレクトリ内に記事を作成
-2. ルートディレクトリで以下のコマンドを実行
+### 1. contentディレクトリ内に記事を作成
 
-    ```shell
+#### sample.md
+
+    Title: Ubuntu Install
+    Date: 2015-02-18 16:00
+    Category: server
+    Tags: ubuntu, kernel
+    Slug: ubuntu-install
+    Author: Matthieu OLIVIER
+    Illustration: background.jpg
+
+### 2. ルートディレクトリで以下のコマンドを実行
+
     pelican content -o output -s pelicanconf.py
-    ```
 
 
 ## Branches
@@ -39,7 +45,7 @@ pelican content -o output -s pelicanconf.py
 
 ## themes
 
-thmes/nest-pydataokinawaディレクトリ内のデータは別リポジトリで管理されています([nest-pydataokinawa](https://github.com/PyDataOkinawa/nest-pydataokinawa))
+themes/nest-pydataokinawaディレクトリ内のデータは別リポジトリで管理されています([nest-pydataokinawa](https://github.com/PyDataOkinawa/nest-pydataokinawa))
 
 
 ## References
