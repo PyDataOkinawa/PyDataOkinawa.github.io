@@ -28,8 +28,12 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (
+            ('Twitter',  'https://twitter.com/pydataokinawa'),
+            ('Facebook', 'https://www.facebook.com/pydata.okinawa'),
+            ('GitHub',   'https://github.com/PyDataOkinawa'),
+            ('connpass', 'https://pydataokinawa.connpass.com/'),
+         )
 
 DEFAULT_PAGINATION = 10
 
