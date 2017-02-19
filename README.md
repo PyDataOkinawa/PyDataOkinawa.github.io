@@ -5,13 +5,13 @@
 - Python 3.4
 - Pelican 3.7.1.dev0
 
-## Installation
+## Installation & Preparation
 
     pip install pelican Markdown mdx_linkify mdx_del_ins
     git clone https://github.com/PyDataOkinawa/PyDataOkinawa.github.io.git
-    cd themes/nest-pydtaokinawa
-    git submodule init
-    git submodule update
+    cd PyDataOkinawa.github.io
+    git checkout pelican
+    git pull && git submodule update --init --recursive
     pelican content -o output -s pelicanconf.py
 
 ## ローカル環境でWebサイトを確認する方法
