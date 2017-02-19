@@ -52,7 +52,7 @@ SITESUBTITLE = u'PyData.Okinawa'
 NEST_CSS_MINIFY = True
 
 # Add items to top menu before pages
-MENUITEMS = [('Home', '/'),('About','/about.html'),('Organizer','/organizer.html'),('Categories','/categories.html')]
+MENUITEMS = [('Home', '/'),('Organizer','/organizer.html'),('Categories','/categories.html')]
 
 # Add header background image from content/images : 'background.jpg'
 NEST_HEADER_IMAGES = 'pydata-okinawa-logo-l.jpg' 
