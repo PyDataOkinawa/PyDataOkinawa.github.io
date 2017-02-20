@@ -56,7 +56,10 @@ MENUITEMS = [('Home', '/'),('Organizer','/organizer.html'),('Categories','/categ
 
 # Add header background image from content/images : 'background.jpg'
 NEST_HEADER_IMAGES = 'pydata-okinawa-logo-l.jpg' 
-NEST_HEADER_LOGO = 'images/pydata-okinawa-logo-l.jpg' 
+NEST_SLIDER_IMAGES_01 = 'pydata-okinawa-logo-l.jpg' 
+NEST_SLIDER_IMAGES_02 = 'pydata-okinawa-logo-m.jpg' 
+NEST_SLIDER_IMAGES_03 = 'pydata-okinawa-logo-l.jpg' 
+NEST_HEADER_LOGO = 'pydata-okinawa-logo-m.jpg' 
 
 # Footer
 NEST_SITEMAP_COLUMN_TITLE = u'Sitemap'
