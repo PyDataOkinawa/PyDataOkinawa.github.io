@@ -11,7 +11,7 @@
     git clone https://github.com/PyDataOkinawa/PyDataOkinawa.github.io.git
     cd PyDataOkinawa.github.io
     git checkout pelican
-    git pull && git submodule update --init --recursive
+    git pull origin pelican && git submodule update --init --recursive
     pelican content -o output -s pelicanconf.py
 
 ## ローカル環境でWebサイトを確認する方法
