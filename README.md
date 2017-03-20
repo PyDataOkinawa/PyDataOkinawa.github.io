@@ -7,40 +7,46 @@
 
 ## Installation & Preparation
 
-    pip install pelican Markdown mdx_linkify mdx_del_ins
+    pip install pelican Markdown mdx_linkify mdx_del_ins ghp-import
     git clone https://github.com/PyDataOkinawa/PyDataOkinawa.github.io.git
     cd PyDataOkinawa.github.io
     git checkout pelican
     git pull origin pelican && git submodule update --init --recursive
     pelican content -o output -s pelicanconf.py
 
+
 ## ローカル環境でWebサイトを確認する方法
 
-上記Installationを実行したあと、生成されたoutputディレクトリ内で`python -m pelican.server`して、ブラウザで[http://localhost:8000](http://localhost:8000)にアクセスしてください
+    cd output
+    python -m pelican.server
+    # 上記コマンドを実行後、http://localhost:8000](http://localhost:8000)にアクセスしてください
 
 
-## 記事の書き方
+## ブログ記事の書き方
 
-### 1. contentディレクトリ内に記事を作成
+### 1. 記事を書く前にリモートリポジトリからデータの差分を取得
 
-#### sample.md
+    git pull origin pelican && git submodule update --init --recursive
 
-    Title: Ubuntu Install
-    Date: 2015-02-18 16:00
-    Category: server
-    Tags: ubuntu, kernel
-    Slug: ubuntu-install
-    Author: Matthieu OLIVIER
-    Illustration: background.jpg
+### 2. content/articlesディレクトリ内に記事を作成
 
-### 2. ルートディレクトリで以下のコマンドを実行
+    cp template/sample.md content/YOUR_ARTICLE_TITLE.md
+
+自分の好きなエディタで`content/YOUR_ARTICLE_TITLE.md`を編集してください
+
+### 3. ルートディレクトリで以下のコマンドを実行
 
     pelican content -o output -s pelicanconf.py
 
+### 4. リモートリポジトリにPushしてサイトを更新
+
+    # ※このコマンドを実行するとすぐ公開しているHPが更新されますので注意してください
+    ghp-import output && git push origin gh-pages:master pelican:pelican
+
 
 ## Branches
-- master  : github-pages公開用のブランチです
-- pelican : 開発用のメインブランチです
+- master  : 公開用のブランチ
+- pelican : ソースを保存するブランチ
 
 
 ## themes
@@ -52,7 +58,6 @@ themes/nest-pydataokinawaディレクトリ内のデータは別リポジトリ�
 
 - [Pelican Docs](http://docs.getpelican.com/en/3.6.3/index.html)
 - [Configuring a publishing source for GitHub Pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/)
-- [GPLとは](http://www.weblio.jp/content/GPL)
 
 
 ## Licence
