@@ -19,7 +19,8 @@
 
     cd output
     python -m pelican.server
-    # 上記コマンドを実行後、http://localhost:8000](http://localhost:8000)にアクセスしてください
+
+上記コマンドを実行後、http://localhost:8000](http://localhost:8000)にアクセスしてください
 
 
 ## ブログ記事の書き方
@@ -40,7 +41,8 @@
 
 ### 4. リモートリポジトリにPushしてサイトを更新
 
-    # ※このコマンドを実行するとすぐ公開しているHPが更新されますので注意してください
+※このコマンドを実行するとすぐ公開しているHPが更新されますので注意してください
+
     ghp-import output && git push origin gh-pages:master pelican:pelican
 
 
