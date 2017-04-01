@@ -11,9 +11,30 @@
     git clone https://github.com/PyDataOkinawa/PyDataOkinawa.github.io.git
     cd PyDataOkinawa.github.io
     git checkout pelican
-    git pull origin pelican && git submodule update --init --recursive
+    git submodule update --init --recursive
     pelican content -o output -s pelicanconf.py
 
+### git submodule update --init --recursiveでエラーが出てしまう場合
+
+先程クローンしてきたpyDataOkinawa.ioのディレクトリに.gitmoduleというファイルがありますのでそちらを編集してください
+    
+#### 編集前
+
+    [submodule "themes/nest-pydataokinawa"]
+        path = themes/nest-pydataokinawa
+        url = git@github.com:PyDataOkinawa/nest-pydataokinawa.git
+
+#### 編集後
+
+    [submodule "themes/nest-pydataokinawa"]
+        path = themes/nest-pydataokinawa
+        url = https://www.github.com/PyDataOkinawa/nest-pydataokinawa.git
+
+編集が終わったら以下のコマンドを実行してください
+
+    git submodule sync
+    git submodule update --init --recursive
+    pelican content -o output -s pelicanconf.py
 
 ## ローカル環境でWebサイトを確認する方法
 
@@ -45,21 +66,17 @@
 
     ghp-import output && git push origin gh-pages:master pelican:pelican
 
-
 ## Branches
 - master  : 公開用のブランチ
 - pelican : ソースを保存するブランチ
-
 
 ## themes
 
 themes/nest-pydataokinawaディレクトリ内のデータは別リポジトリで管理されています([nest-pydataokinawa](https://github.com/PyDataOkinawa/nest-pydataokinawa))
 
-
 ## References
 
 - [Pelican Docs](http://docs.getpelican.com/en/3.6.3/index.html)
 - [Configuring a publishing source for GitHub Pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/)
-
 
 ## Licence
