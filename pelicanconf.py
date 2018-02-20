@@ -55,11 +55,9 @@ NEST_CSS_MINIFY = True
 MENUITEMS = [('Home', '/'),('Organizer','/organizer.html'),('Categories','/categories.html')]
 
 # Add header background image from content/images : 'background.jpg'
-NEST_HEADER_IMAGES = 'favicon-l.png' 
-NEST_SLIDER_IMAGES_01 = 'pydata-okinawa-logo-l.jpg' 
-NEST_SLIDER_IMAGES_02 = 'pydata-okinawa-logo-m.jpg' 
-NEST_SLIDER_IMAGES_03 = 'pydata-okinawa-logo-l.jpg' 
-NEST_HEADER_LOGO = 'pydata-okinawa-logo-m.jpg' 
+NEST_HEADER_IMAGES = 'favicon-l.png'
+NEST_TOP_IMAGE = 'pydata-okinawa-logo-l.jpg'
+NEST_HEADER_LOGO = 'pydata-okinawa-logo-m.jpg'
 
 # Footer
 NEST_SITEMAP_COLUMN_TITLE = u'Sitemap'
