@@ -1,0 +1,39 @@
+html {
+  line-height: 1.5em;
+}
+
+body {
+  font-family: Avenir, Arial, YuGothic, 'Yu Gothic', sans-serif;
+  color: #677b83;
+}
+
+a:link, a:visited {
+  color: #469db9;
+}
+
+a:hover, a:active {
+  color: #ed9042;
+}
+
+main {
+  width: 100%;
+  max-width: 800px;
+  padding: 0 1em;
+  margin: 4em auto;
+  box-sizing: border-box;
+}
+
+header {
+  height: 10em;
+  background: url(logo.png) no-repeat center;
+  background-size: contain;
+  margin: 8em 0;
+}
+
+header h1 {
+  display: none;
+}
+
+h2 {
+  margin-top: 2em;
+}
