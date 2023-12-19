@@ -7,11 +7,13 @@ body {
   color: #677b83;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   color: #469db9;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   color: #ed9042;
 }
 
